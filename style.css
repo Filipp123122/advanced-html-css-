@@ -232,6 +232,214 @@ body {
     background-color: #F7E4E2;
 }
 
+.aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222224;
+    padding-top: 103px;
+    padding-bottom: 104px
+}
+
+.aside__info {
+    width: 31.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside__info__title {
+    color: #FBFBFB;
+    font-family: Lato;
+    font-size: 19.96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.aside__info__text {
+    color: #FBFBFB;
+    text-align: center;
+    font-family: Lato;
+    font-size: 13.972px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 88%;
+}
+
+.aside__info-1 {
+    margin-top: 28px;
+    margin-bottom: 16px;
+}
+
+.aside__info-2 {
+    margin-top: 19px;
+    margin-bottom: 16px;
+}
+
+.aside__info-3 {
+    margin-top: 25px;
+    margin-bottom: 16px;
+}
+
+.subscribe__info {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe__info__content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(244, 244, 244, 0.70);
+}
+
+.big__img {
+    width: 100%;
+}
+
+.lil__pic {
+    margin-bottom: 30px;
+}
+
+.phrase {
+    text-align: center;
+    width: 65%;
+}
+
+.phrase-1 {
+    color: #222224;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.phrase-2 {
+    color: #222224;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.my__info {
+    display: flex;
+    flex-direction: column;
+    width: 51%;
+    align-items: center;
+}
+
+.subscribe__form {
+    width: 56%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe__form__action {
+    display: flex;
+}
+
+.subscribe__text {
+    margin-bottom: 30px;
+}
+
+.input__style {
+    display: flex;
+    width: 256px;
+    height: 49px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #222224;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border: none;
+    background-color: #E1E1E1;
+}
+
+.button__subscribe {
+    display: flex;
+    width: 100px;
+    height: 49px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-items: center;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border: none;
+    background-color: black;
+}
+
+.button__subscribe-2:hover {
+    background-color: #F16D7F;
+}
+
+.footer__info {
+    width: 72%;
+}
+
+.footer__last {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222224;
+    padding-top: 24px;
+    padding-bottom: 23px;
+}
+
+.footer__text {
+    color: #FBFBFB;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.icon:hover path{
+    fill: #F16D7F;
+}
+
+.icon:hover path.icon_small {
+    fill: #222224;
+}
+
+
+
+.icon__link:hover {
+    display: inline-block;
+    box-shadow: 0 0px 5px #fff;
+}
+
+
+
+
+
 @media (max-width: 1024px) and (min-width: 768px) {
     .subtitle {
         display: flex;
@@ -276,11 +484,62 @@ body {
     .elements_menu {
         width: 48%;
     }
+
+    .aside {
+        flex-wrap: wrap;
+        padding-bottom: 64px;
+        padding-top: 48px;
+    }
+
+    .aside__info {
+        width: 100%;
+    }
+
+    .aside__info__text {
+        width: 30%;
+    }
+
+    .aside__info_1 {
+        margin-bottom: 48px;
+    }
+
+    .aside__info_2 {
+        margin-bottom: 48px;
+    }
+
+    .subscribe__info__content {
+        flex-wrap: wrap;
+        position: unset;
+        padding-top: 64px;
+        padding-bottom: 140px;
+    }
+
+    .my__info {
+        width: 61%;
+        margin-bottom: 48px;
+    }
+
+    .big__img {
+    display: none
+    }
+
+    .subscribe__info {
+        background-image: url(img/big_pic.png);
+        background-size: cover;
+        background-position: 30%;
+        background-repeat: no-repeat;
+        height: 693px;
+    } 
+
 }
 
 @media (max-width: 767px) and (min-width: 320px) {
     .main_pic_img {
         display: none;
+    }
+
+    .rectangle {
+        width: 3.5%;
     }
 
     .title_main {
@@ -290,6 +549,10 @@ body {
         font-style: normal;
         font-weight: 900;
         line-height: normal;
+    }
+
+    .right_side {
+        width: 100%;
     }
 
     .subtitle {
@@ -334,4 +597,115 @@ body {
     .elements_second {
         width: 100%;
     }
+
+    .aside {
+        flex-wrap: wrap;
+        padding-bottom: 64px;
+        padding-top: 48px;
+    }
+
+    .aside__info {
+        width: 100%;
+    }
+
+    .aside__info__text {
+        width: 40%;
+    }
+
+    .aside__info_1 {
+        margin-bottom: 48px;
+    }
+
+    .aside__info_2 {
+        margin-bottom: 48px;
+    }
+
+    .subscribe__info__content {
+        flex-wrap: wrap;
+        position: unset;
+        padding-top: 64px;
+        padding-bottom: 140px;
+    }
+
+    .subscribe__text {
+        text-align: center;
+        width: 192%;
+    }
+
+    .subscribe__form {
+        width: 52%;
+    }
+
+    .my__info {
+        width: 61%;
+        margin-bottom: 48px;
+    }
+
+    .big__img {
+        display: none
+    }
+
+    .subscribe__info {
+        background-image: url(img/big_pic.png);
+        background-size: cover;
+        background-position: 30%;
+        background-repeat: no-repeat;
+        height: 693px;
+    } 
+
+    .footer__last {
+        flex-direction: column-reverse;
+        padding-top: 40px;
+    }
+
+    .footer__info {
+        width: unset;
+    }
+
+    .footer__text {
+        text-align: center;
+    }
+
+    .icons {
+    margin-bottom: 40px;
+    }
+
+    .phrase {
+        width: 159%;
+    }
+
+    .phrase-1 {
+    color: #222224;
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+
+    .phrase-2 {
+    color: #222224;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    }
+
+    .input__style {
+        width: 126%;
+        height: 46px;
+    }
+
+    .button__subscribe {
+        width: 52%;
+        height: 46px;
+    }
+
+    .subscribe__form__action {
+        justify-content: center;
+    }
+
 }
+
