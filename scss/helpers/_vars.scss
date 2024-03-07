@@ -1,0 +1,5 @@
+$colorPink: #F16D7F;
+$widthSite: 1140px;
+$productsGap: 30px;
+$onePartOfSite: (
+    $widthSite - ($productsGap * 2)) / 3;

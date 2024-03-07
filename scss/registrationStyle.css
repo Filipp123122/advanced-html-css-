@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "Lato";
+  src: url("../../fonts/Lato-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../../fonts/Lato-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding-top: 18px;
+  padding-bottom: 20px;
+}
+.header .search {
+  display: flex;
+  gap: 33px;
+  align-items: flex-end;
+}
+.header .header__checkbox {
+  position: absolute;
+  visibility: hidden;
+  left: -9999999px;
+}
+.header .header__checkbox:checked ~ .mobile__menu {
+  right: 0;
+}
+.header .mobile__menu {
+  position: fixed;
+  top: 75px;
+  right: -232px;
+  z-index: 1;
+  transition: right 0.6s;
+  width: 232px;
+  background: #FFFFFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding: 32px;
+  box-sizing: border-box;
+}
+.header .mobile__menu .mobile__menu__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.header .mobile__menu .mobile-menu__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+.header .mobile__menu .mobile-menu__link:hover {
+  color: #F16D7F;
+}
+.header .mobile__menu .mobile-menu__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+}
+.header .mobile__menu .mobile-menu__list {
+  list-style-type: none;
+  padding-left: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-top: 12px;
+}
+.header .mobile__menu .mobile-menu__box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #F8F3F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+.heading__title {
+  color: #F16D7F;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.registration {
+  display: flex;
+}
+.registration .left-side__name {
+  color: rgb(34, 34, 34);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.registration .left-side .registration-form {
+  display: flex;
+  flex-direction: column;
+}
+.registration .left-side .registration-form__input {
+  width: 360px;
+  height: 40px;
+  margin-bottom: 20px;
+  padding-left: 17px;
+  color: rgb(177, 177, 177);
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: left;
+}
+.registration .left-side .registration-form__input:focus {
+  color: black;
+}
+.registration .left-side .registration-form__radio {
+  display: flex;
+  margin-bottom: 33px;
+  margin-top: 11px;
+}
+.registration .left-side .registration-form__radio label {
+  padding-left: 10px;
+  margin-right: 20px;
+  color: rgb(0, 0, 0);
+  font-family: Lato;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 13px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.registration .left-side .registration-form__login {
+  color: rgb(34, 34, 34);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.registration .left-side .registration-form__text {
+  color: rgb(177, 177, 177);
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 31.6%;
+  margin-bottom: 39px;
+}
+.registration .left-side .registration-form__button {
+  width: 166px;
+  height: 50px;
+  background: rgb(241, 109, 127);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.registration .left-side .registration-form__button_name {
+  color: rgb(255, 255, 255);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.registration .left-side .registration-form__button:hover {
+  box-shadow: 0 0 5px #5E5E5E;
+}
+.registration .right-side {
+  width: 55.5%;
+}
+.registration .right-side__name {
+  color: rgb(0, 0, 0);
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 22px;
+}
+.registration .right-side__info {
+  color: rgb(0, 0, 0);
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 21px;
+  margin-bottom: 22px;
+}
+.registration .right-side__list {
+  color: rgb(0, 0, 0);
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  list-style-type: none;
+}
+.registration .right-side__list li {
+  padding-left: 44px;
+  background-image: url("../img/Vector2.svg");
+  background-position: 0 6px;
+  background-repeat: no-repeat;
+  margin: 16px 0;
+}/*# sourceMappingURL=registrationStyle.css.map */
